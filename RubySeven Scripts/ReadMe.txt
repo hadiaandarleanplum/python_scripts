@@ -36,4 +36,8 @@ Uses https://us1.api.clevertap.com/1/demerge/profiles.json. It will take in an a
 4. uploadUserProfileApi.py
 Uses https://us1.api.clevertap.com/1/upload. It will take in an account id and token and target the objectIds column in BadKs_Identity_ObjectID.csv. 
 
-It will map the identity from profiles_with_identity_identity_error.csv and objectId from profiles_with_objectid_identity_error.csv to the corresponding objectId from BadKs_Identity_ObjectID.csv and push it to the correct profiles. 
+It will map the identity from profiles_with_identity_identity_error.csv to the corresponding objectId from BadKs_Identity_ObjectID.csv and push it to the correct profiles. Note that this will only work for profiles_with_identity_identity_error.csv, because you cannot push an objectId to another profile with an objectId using the api. It will upload it as a user property. 
+
+
+Apps Completed:
+TEST-FoxPlay Casino: https://us1.dashboard.clevertap.com/779-6W4-9Z7Z/main
